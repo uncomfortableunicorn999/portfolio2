@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Final Portfolio | CSCI 1300</title>
+
+  <!-- Favicons -->
+  <!-- CITATION: Taken from https://play.google.com/store/apps/details?id=com.alfianlosari.hackernews&hl=en&gl=US -->
+  <link href="favicon.png" rel="icon">
+
+  <!-- Font -->
+  <!-- Sofia-Pro Adobe Font -->
+  <link rel="stylesheet" href="https://use.typekit.net/blg0zww.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Index CSS File -->
+  <link href="index.css" rel="stylesheet">
+
+  <!-- From https://getbootstrap.com/docs/5.0/examples/#custom-components Jumbotron Example -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- CITATION: https://getbootstrap.com/docs/5.0/components/navbar/ -->
+  <nav class="navbar navbar-expand-lg navbar-light text-white sticky-top custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Final Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" aria-current="page" href="#me">About Me</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#projects">Projects</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container py-4">
+
+    <!-- CITATION: JUMBOTRON EXAMPLE FROM https://getbootstrap.com/docs/5.0/examples/#custom-components -->
+    <div class="p-5 mb-4 dark-bg rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold" style="color: white">My Portfolio</h1>
+        <p class="col-md-8 fs-4" style="color: white">Learning web design</p>
+      </div>
+    </div>
+
+    <!-- Sections: Introduction, Hacker News Website, Issues Here, Issues There, Issues Everywhere!, Lo-Fi Wireframes, Style Guide, Hi-Fi Prototypes, Hacker News: Redesigned, Conclusion -->
+    <div class="row">
+      <div class="col-md-12">
+        <h3 id="me" class="pb-4 mb-4 border-bottom">
+          Introduction
+        </h3>
+
+        <!-- Add site-screenshot on Left in Rounded Image and then on right a description of website, below that is a fun fact that is expandable -->
+        <div class="row">
+
+          <div class="col-md-6 col-6">
+            <h4 class="pb-2 mb-2">About Me</h4>
+            <p> I am a senior at Brown University studying Computer Science. In taking a User Interfaces and User Experiences
+              class this semester, I have been learning about usability and principles of design, how to use html, css and javascript, 
+              and xyz.
+           </p>
+
+          </div>
+        </div>
+
+        <!-- Create a new section titled sketches and then add the sketches-->
+        <div class="row">
+          <div class="col-md-12">
+            <h3 id="projects" class="pb-4 mb-4 border-bottom">
+              Projects
+            </h3>
+            <p>The following are projects that I have worked on this semester. I am a complete beginner, and had never touched html prior this 
+              class. Below, you can see each of my projects and the new concepts I have learned from each of them.
+            </p>
+          <p> Click on each of the images below to see my projects.</p>
+            
+    
+            <div class="row">
+              <div class="col-md-5 col">
+                <div class="card dark-bg h-100 ">
+                  <div class="card-body">
+                    <a href="./personas.html">
+                    <img class="site img-fluid " src='CVS-Pharmacy-Logo.png' alt="cvs logo">
+                    </a>
+                    <h4 class=" on-dark-bg">User Stories and User Personas</h4>
+                    <p class="card-text on-dark-bg">In this first project, I explored the interface of CVS self checkout, 
+                      the people who use it, and the troubles they faced with the interface. I had my first experience creating
+                      user personas and user stories. I learned how to get in the minds of different users and empathize with their 
+                      struggles. I myself have had a lot of troubles at CVS self checkout :)
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col">
+                <div class="card dark-bg h-100 ">
+                  <div class="card-body">
+                    <a href="./responsive.html">
+                    <img class="site img-fluid" src="./responsive/redesign.png" alt="Orca YC Page">
+                    </a>
+                    <h4 class=" on-dark-bg">Responsive Redesign</h4>
+                    <p class="card-text on-dark-bg">In this project, I took an existing website- Mountain Thunder, and redesigned it
+                      based on the design and usability principles learned in class. After seeing this website, and being utterly confused
+                      by how to navigate it and find any information, I knew this was a great site to redesign.
+                       Part of the project was thinking about the size and design of 
+                      different elements when the page got resized, I thought on three different size, tablet, phone and desktop.
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+
+          
+              <div class="col-md-5 col">
+                <div class="card dark-bg h-100 ">
+                  <div class="card-body">
+                    <a href="./development/development.html">
+                    <img class="site img-fluid" src="./development/pies.png" alt="Orca YC Page">
+                    </a>
+                    <h4 class=" on-dark-bg">Development</h4>
+                    <p class="card-text on-dark-bg">In this project I learned about using libraries like Material UI and incorporating javascript
+                      in with html and css. I demonstated my love of baking and my love of the New York Times Cooking website. I used information from 
+                      the Thanksgiving Pie collection to create a site with filtering and sorting. I learned about state in jss
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col">
+                <div class="card dark-bg h-100 ">
+                  <div class="card-body">
+                    <a href="./iterative-design/index.html">
+                    <img class="site img-fluid" src="./iterative-design/iterative_image.png" alt="Orca YC Page">
+                    </a>
+                    <h4 class=" on-dark-bg">Iterative Design</h4>
+                    <p class="card-text on-dark-bg">In this project, my group and I demonstrated our Figma abilities. We chose a startup idea,
+                      made a design, and got feedback on our design. We also experienced the user testing process and getting feedback from people
+                      who would be the prospective users of the app that we created.
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+
+
+              
+          </div>
+
+        
+
+
+
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+      <!-- CITATION: Tooltip Code https://getbootstrap.com/docs/5.0/components/tooltips/ -->
+      <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+      </script>
+</body>
+
+</html>

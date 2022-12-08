@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- Structure based off of Jeff's bootstrap tutorial https://www.youtube.com/watch?v=6Df6xbs5m8A -->
+<head>
+    <link href="favicon.png" rel="icon">
+
+  <!-- Favicons -->
+  <!-- CITATION: Taken from https://play.google.com/store/apps/details?id=com.alfianlosari.hackernews&hl=en&gl=US -->
+  <link href="favicon.png" rel="icon">
+
+  <!-- Font -->
+  <!-- Sofia-Pro Adobe Font -->
+  <link rel="stylesheet" href="https://use.typekit.net/blg0zww.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Index CSS File -->
+  <link href="responsive.css" rel="stylesheet">
+
+  <!-- From https://getbootstrap.com/docs/5.0/examples/#custom-components Jumbotron Example -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Personas and StoryBoarding</title> 
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light text-white sticky-top custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="./index.html">Final Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" aria-current="page" href="#project">Project</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#issues">Issues</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#sketches">Sketches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#prototypes">Prototypes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#design">Design Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#pages">Before and After</a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container py-4">
+
+<div class="p-5 mb-4 dark-bg rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold" style="color: white">Responsive Redesign</h1>
+      <p class="col-md-8 fs-4" style="color: white">A page makeover for Mountain Thunder Coffee</p>
+    </div>
+  </div>
+  <div class="row">
+
+    <div>
+      <h4 id="project" class="pb-2 mb-2">The Project</h4>
+      <p> In this project, we were tasked with finding a page with different usability issues. These issues included, learnability, memorability
+        , accessibility and .... issues. After finding the issues with the page, I created a new design to solve these issues. Using balsamiq, I made 
+        wireframes, then prototyped with Figma, finally actually created the responsive page in html and css.
+     </p>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h3 id="issues" class="pb-4 mb-4 border-bottom">
+        Page Issues
+      </h3>
+
+      <!-- Add site-screenshot on Left in Rounded Image and then on right a description of website, below that is a fun fact that is expandable -->
+      <div class="col" style="justify-content: center; align-items: center;">
+        <div class="accordion" id="lofi">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Learnability Issues
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#lofi">
+              <div class="accordion-body">
+                <ul>
+                  <li>There are too many tabs for exploration for drop down menus</li>
+                  <li>If you want to order you first have to login, but you can get to the ordering page without doing so
+                  </li>
+                  <li>because there is a side menu bar and a top menu bar it just leaves too many places for people to have search for the information they are trying to find</li>
+                  <li>If you are trying to find information as well, there are dead radio buttons that don’t lead to anywhere and you can’t actually select anything from them.</li>
+                  <li>The spacing on the top menu bar is also confusing (is it Farm, Tours or Farm Tours)</li>
+                  <ul>
+                      <li>They are suffereing from a barage of infromation that it is overwhelming for new users to learn to use
+                      </li>
+                  </ul>
+                 </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Memorability Issues
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#lofi">
+              <div class="accordion-body">
+                <ul>
+                  <li>The double navigation methods would be an issue</li>
+                  <li>Remembering to scroll down to the bottom to sign in,even if you know what you are doing, it is a pain to scroll to the bottom</li>
+                  <li> Still the too many links might be hard for users to remember which page they clicked on to get where</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Design Issues
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#lofi">
+              <div class="accordion-body">
+                <ul>
+                  <li>Overcrowding</li>
+                  <li>Doubled information on multiple pages (the video on the home page is also on the tour page, which is why I removed it)</li>
+                  <li>Unclear Hierarchy for ordering the coffee on the home page (which doesn't even make sense to have ordering on the home page when there is a shopping page)</li>
+                  <li>Inconsistent font size and usage</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Accessibility Issues
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#lofi">
+              <div class="accordion-body">
+                <p>The WAVE report for mountain thunder can be found <a href="https://wave.webaim.org/report#/mountainthunder.com">here</a> Below is the summary of results.</p>
+
+                <ul>
+                  <li>40 contrast errors</li>
+                  <li>A few cases of missing alt text, but generally they do a very good job</li>
+                  <li>A few cases of too small text</li>
+                  <li>Multiple links that do not lead anywhere</li>
+                  <li>The radio buttons for ordering do not have a group</li>
+                  <li>Empty buttons and redundant links</li>
+              </ul>
+              <p>I agree with this report especially on the contrast errors. The website is hard to read because of the style chosen
+                I kept this in mind while redesigning. 
+            </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <div class="row dark-bg">
+        
+        <h3 id="sketches" class="pb-4 mb-4 border-bottom" style="color: white;">
+          Sketches
+        </h3>
+        <div class="row">
+          <a href="responsive/phone wireframe.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
+            <img src="responsive/phone wireframe.png" class="img-fluid site" alt="phone wireframe">
+          </a>
+          <a href="responsive/ipad wireframe.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
+            <img src="responsive/ipad wireframe.png" class="img-fluid site" alt="ipad wireframe">
+          </a>
+          <a href="responsive/laptop wireframe.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
+            <img src="responsive/laptop wireframe.png" class="img-fluid site">
+          </a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+
+      
+        <h3 id="prototypes" class="pb-4 mb-4 border-bottom">
+          Figma Prototypes
+        </h3>
+        <div class="row">
+          <a href="responsive/iphone figma.png" data-toggle="lightbox" data-gallery="figma-gallery" class="col-md-4">
+            <img src="responsive/iphone figma.png" class="img-fluid site" alt="phone wireframe">
+          </a>
+          <a href="responsive/ipad figma.png" data-toggle="lightbox" data-gallery="figma-gallery" class="col-md-4">
+            <img src="responsive/ipad figma.png" class="img-fluid site" alt="ipad wireframe">
+          </a>
+          <a href="responsive/web figma.png" data-toggle="lightbox" data-gallery="figma-gallery" class="col-md-4">
+            <img src="responsive/web figma.png" class="img-fluid site">
+          </a>
+        </div>
+<br>
+<br>
+<br>
+        <div class="row">
+        
+          <div class="col-md-6 col-6">
+            <h3 id="design" class="pb-4 mb-4 border-bottom">
+              Visual Design Guide
+            </h3>
+            <p>The diagram to the right shows the visual design guide for the project. It has the color scheme for the new site, as well as the logos and buttons.
+              All of the fonts and buttons designs are also shown. I also show the designs for the hover images 
+           </p>
+  
+          </div>
+          <div class="col-md-6 col-6">
+              <!-- make clicking image open site, on hover make it expand -->
+              <img class=" img-fluid " src="./responsive/design.png" alt="Interface">  
+          </div>
+        </div>
+        <br>
+<br>
+<br>
+<h3 id="pages" class="pb-4 mb-4 border-bottom">
+  Before and After
+</h3>
+<p>
+  The left image will take you to the original website, and the right will take you to my redesigned version!
+</p>
+        <div class="row">
+          <div class="col-md-5 col">
+            <div class="card dark-bg h-100 ">
+              <div class="card-body">
+                <a href="https://mountainthunder.com/">
+                <img class="site img-fluid " src='./responsive/original.png' alt="cvs logo">
+                </a>
+                <h4 class=" on-dark-bg">The Original Site</h4>
+              
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col">
+            <div class="card dark-bg h-100 ">
+              <div class="card-body">
+                <a href="https://uncomfortableunicorn999.github.io/mountain_thunder/">
+                <img class="site img-fluid" src="./responsive/redesign.png" alt="Orca YC Page">
+                </a>
+                <h4 class=" on-dark-bg">My Redesign</h4>
+                <p class="card-text on-dark-bg">
+                </p>
+               
+              </div>
+            </div>
+          </div>
+
+
+    
+
+</div>
+</div>
+ <!-- Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+ crossorigin="anonymous"></script>
+
+<!-- CITATION: Tooltip Code https://getbootstrap.com/docs/5.0/components/tooltips/ -->
+<script>
+ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+   return new bootstrap.Tooltip(tooltipTriggerEl)
+ })
+</script>
+
+<!-- Lightbox CDN for Modal Image Gallery -->
+<!-- CITATION: https://trvswgnr.github.io/bs5-lightbox/ -->
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
+
+<!-- import index.js in this directory -->
+<script src="index.js"></script>
+</body>
+
+</html>

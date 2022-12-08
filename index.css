@@ -1,0 +1,46 @@
+body {
+    font-family: "Sofia-Pro", sans-serif;
+    background-color: #f5f5ee;
+  }
+
+.section {
+    padding: 2rem 0 7rem;
+}
+
+
+.custom-navbar {
+    background: #2b0c3a;
+}
+
+.custom-footer {
+    background-color: #2b0c3a;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.dark-bg {
+    background-color: #2b0c3a;
+    padding-bottom: 1rem;
+}
+.on-dark-bg {
+    color: white;
+}.col{
+    padding-bottom: 1rem;
+}.site {
+    width: 30rem;
+    height: 25rem;
+}
+
+/* on hover make expand */
+.site:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* make Y Combinator orange, bold, and underline */
+.topic {
+    color: #020c63;
+    font-weight: bold;
+    text-decoration: underline;
+}
+  

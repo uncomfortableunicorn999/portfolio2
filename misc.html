@@ -1,0 +1,304 @@
+<section class="section">
+     
+
+    <!-- What are Personas and Storyboards? -->
+    <!-- CITATION for this content: https://uxplanet.org/user-personas-scenarios-user-stories-and-storyboards-whats-the-difference-cf00315f0799 -->
+    <div class="row">
+        <div class="col-md-12">
+            <h2>What are Personas and Storyboards?</h2>
+            <p>Personas and Storyboards are two of the most important tools in the UI/UX design process. They help us understand the user's needs and goals with an interface. These tools are relatively simple, but provide high impact! Let's dive into these two tools, and see them come to life with regard to the self-checkout macines at the Thayer Street CVS!</p>
+        </div>
+
+        <!-- Personas -->
+        <div class="col-md-6">
+            <h4>Personas</h4>
+            <p>Personas are fictional, archetypal characters that represent a group of users. They are created based on research and data, and are used to extract the goals and needs of the users. They are also used to understand users' emotions and motivations!</p>
+            <p>The method used to create the personas below are via an <b>empathy map</b>. An empathy map focuses on one persona and there characteristics are split into four quadrants: "Thinks", "Feels", "Says", "Does". This provides a comprehensive idea of what the persona is!</p>
+        </div>
+
+        <!-- Storyboarding -->
+        <div class="col-md-6">
+            <h4>Storyboards</h4>
+            <p>Storyboards are a series of images that tell a narrative about a user interacting with an interface. Similar to Personas, they are also used to understand a user's goals and needs. Storyboards do this by honing in on one persona and providing a story, from beginning to end, of that persona's interactions with the interface.</p>
+            <p>Further, Storyboards are concise and convey a real scenario and the emotions the persona may feel at each step of the story.</p>
+        </div>
+
+        <!-- The CVS Self-Checkout Interface -->
+        <!-- Description, sketch, and then each of the parts of the sketch -->
+        <div class="col-md-12">
+            <h2>The CVS Self-Checkout Interface</h2>
+            <p>Let's take a look at the CVS Self-Checkout Interface, and see how we can use Personas and Storyboarding to understand the user's needs and goals!</p>
+        </div>
+        <!-- Overview -->
+        <div class="col-md-12">
+            <p>The <b>CVS Self-Checkout</b> provides an interface to scan and pay for items at a user's own pace. The user takes control of the checkout process, and eliminates the need for a cashier to be present when checking out!</p>
+            <p>The interface provides instructions on the main kiosk screen to guide users at each step of the checkout process. Next, there is a scanner for items and coupons, and then two bagging areas: one for CVS paper bags and a separate area for users who prefer to use their own bags. Then, there is a separate payment kiosk to pay using a card or contactless NFC technology (and some contain an area for cash below the scanner). Lastly, the interface contains an indicator light to flag employees when requesting assistance and separate light to indicate if a machine is open!</p>
+            <p>Let's break down each component! <b>Tap each heading on the right to see its description</b>:</p>
+        </div>
+        <!-- Sketch and Breakdown -->
+        <!-- Create an image on the left, and an accordion component on the right with descriptions -->
+        <div class="col-md-6">
+            <img src="sketch.jpg" class="img-fluid" alt="CVS Self-Checkout Interface">
+        </div>
+        <!-- CITATION: Accordion component from Bootstrap Docs: https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example -->
+        <div class="col-md-6">
+            <!-- Retain accordionExample id for JS -->
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link cvs-text" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        #1: Main Display Kiosk
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        This is the primary component of the interface. It first prompts the user to scan an item to begin using the interface. It displays the interface for seeing one's receipt, providing instructions, and provides a button to request assistance from an employee. It also contains screens for donations and for selecting payment.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed cvs-text" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        #2: Scanning Area
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        This portion of the interface contains a front scanner that faces the user and a bottom scanner that faces the ceiling. The user scans items and coupons here. The user can also scan their CVS ExtraCare card to earn rewards!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed cvs-text" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        #3: CVS Paper Bagging Area
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        This area is for using the CVS paper bags to stow away items after scanning them!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed cvs-text" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        #4: Dollar Input and Change Return
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        This area is for inputting dollar bills and receiving change. It is located below the scanner.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed cvs-text" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        #5: Personal Bagging Area
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                        This area is for bagging items in personal bags instead of using the CVS paper bags.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed cvs-text" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        #6: Payment Kiosk
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                    <div class="card-body">
+                        The payment kiosk is for paying for items. It contains a scanner for credit cards and contactless NFC technology. It also relays information about the total and the receipt. 
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingSeven">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed cvs-text" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        #7: Indicator Help Light
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                    <div class="card-body">
+                        When the user requests help using the Main Display Kiosk, the machine is not working properly, or when there is an age restriction on an item, this light will turn on. An employee will then come to help the user.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingEight">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed cvs-text" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        #8: Kiosk Availability Light
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                    <div class="card-body">
+                        This blue light indicates that the kiosk is available for use. When the light is white, the self-checkout is not available for use.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- User Observations and Interviews -->
+        <!-- Write main observations, then interview questions list, then 5 bullet point summary -->
+        <div class="col-md-12 mt-5">
+            <h2>User Observations and Interviews</h2>
+            <p>In order to construct Personas and a Storyboard for the CVS interface, <b>3 interviews</b> were conducted and recorded for reference. The first portion was to record observations and common patterns between users of the interface. Next, interview questions were asked to gauge each user experience.</p>
+            <p>Below are the key observations taken from these users, as well as the interview questions and summary of responses to the questions.</p>
+        </div>
+
+        <!-- Observations -->
+        <div class="col-md-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Observations</h5>
+              <ul class="card-text">
+                <li>When the user first interacted with the interface, they needed to pause to process <i>how</i> to start. Namely, putting their items down on the scanner will immediately trigger the “Scanning Phase," catching the user off guard. Sometimes the previous shopper will ignore the receipt screen, which the next user must first deal with before starting.</li>
+                <li>Users finished scanning all items before considering the payment kiosk and all of the elements on the Main Display Kiosk. As such, most missed the graphic explaining where the “bagging area” is. As such, most users hesitated when figuring out where to put there scanned items.</li>
+                <li>The users selected the “Use My Own Bags” button, which disables the interface for about 10 seconds, and elicits awkward pausing and taps on the interface to exit this mode (which does not work: the user must sit and wait for the screen to enable buttons again).</li>
+                <li>Some users paid on the payment kiosk before selecting a payment method or reading the instructions on the Main Display Kiosk.</li>
+                <li>All users smiled and appreciated the auditory instructions and feedback (e.g. beep after a scan or when a chime places when payment is processing) to know that a scan went through or their payment went through.</li>
+              </ul>  
+            </div>
+          </div>                    
+        </div>
+
+        <!-- Interview Questions -->
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Interview Questions</h5>
+                <ol class="card-text">
+                  <li>What is your relationship with shopping?</li>
+                  <li>Do you have any frustrations with shopping? If so, what are they?</li>
+                  <li>What is your preferred payment method?</li>
+                  <li>What comes to mind when you think about a self-checkout interface?</li>
+                  <li>What are you hoping to get out of using a self-checkout interface itself?</li>
+                  <li>How often do you use a self-checkout interface when checking out?</li>
+                  <li>What does your ideal self-checkout interface look like?</li>
+                  <li>Why did you select self-checkout over regular checkout?</li>
+                  <li>Tell me about your experiene with the self-checkout interface at CVS?</li>
+                  <li>What would you define to be the biggest challenge when ordering on this interface?</li>
+                  <li>Is there a feature that is most important to you?</li>
+                  <li>Is there a feature that is least important to you?</li>
+                  <li>Is there anything on this interface that makes you "happy"? How would you define “happiness” in this case?</li>
+                  <li>Was there anything that surprised you about this interface?</li>
+                  <li>What do you think about how the interface is organized?</li>
+                  <li>Is there any feature you would remove?</li>
+                  <li>Is there any feature you would add or update?</li>
+                  <li>Is this interface accessible?</li>
+                  <li>Would you prefer to have an alternate interface than this interface? What would that alternate interface look like?</li>
+                  <li>On a scale of 1-10, how likely would you be to recommend this to someone else?</li>
+                  <li>If you had to use three words, how would you describe this interface?</li>
+                  <li>Are there any other comments, thoughts, or opinions that you haven't had a chance to express yet?</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Response Summary</h5>
+              <ul class="card-text">
+                <li>Users intuitively start scanning items without considering any other part of the interface. However, they may have to deal with past users not continuing past the receipt screen, which causes <b>confusion and frustration</b> from the beginning.</li>
+                <li>Users have the goal of scanning at their own pace and paying quickly (most prefer contactless NFC payment). They prefer the self-checkout interface because of the sense of control it gives and straightforwardness of scanning and paying (it feels streamlined).They believe it gets the job done, and has fair instructions.</li>
+                <li>Most confusion came from the bagging station interface, with the paper bags on the left and the area on the right. Further, a camera is used to detect if an item has not been scanned, which causes pressure and confusion when the user does not put their items in the bagging area.</li>
+                <li>Users prefer to have a simpler interface with more explicit instructions beyond just auditory instructions and text on the side. They suggest full-screen pop-ups and the disabling of some features (e.g. swiping card) until the payment phase has been entered.</li>
+                <li>All agreed that the interface on the main kiosk is crowded, and most buttons get tuned out. All users missed the bagging area instructions, were irritated by the payment selection screen, and reported that voice instructions were easy to miss. They felt that there was no clear focus on what the next step was in some cases.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Two Personas -->
+        <!-- Create cards and captions for each persona -->
+        <div class="col-md-12 mt-5">
+            <h2>Creating Personas</h2>
+            <p>With the data collected, let's now see the personas that can ge generated from it via empathy maps!</p>
+        </div>
+
+        <!-- Card Component -->
+        <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="pablo.jpg" alt="Perplexed Pablo">
+              <div class="card-body">
+                <h5 class="card-title">Perplexed Pablo</h5>
+                <p class="card-text">Perplexed Pablo is an underclassman at Brown with a laidback schedule and a popping social life. He uses the self-checkout line for its efficiency, but gets confused by what he thinks is a messy interface and misses a lot of the instructions on the display. He does not put his items in the bagging area, and feels awkward when he struggles with the interface. He also double checks that his items and coupons go through.</p>
+                <p class="card-text">Pablo exemplifies being oblivious to some of the aspects of the interface in the heat of the moment, and the anxiety associated with using the interface.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="randy.jpg" alt="Rushed Randy">
+              <div class="card-body">
+                <h5 class="card-title">Rushed Randy</h5>
+                <p class="card-text">Rushed Randy is a computer science concentrator at Brown with a loaded schedule, introverted character, and stress about internship applications. Randy seeks to maximize his time by taking control of the checkout process and getting out of the store quickly to get back to his Leetcode problem! He notes the phone number option and scans his items quickly, but gets frustrated with the different screens and places his items randomly on the unscanned items platform.</p>
+                <p class="card-text">Randy exemplifies the appreciation of the speed and convenience of using this interface and not having to deal with human interaction, yet experiencing the frustration when going too fast!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Storyboard -->
+        <div class="col-md-12 mt-5">
+            <h2>Storyboard</h2>
+            <p>Now that we have personas, let's now examine a storyboard that can help us visualize the user journey!</p>
+            <p>Let's see what a storyboard for <b>Rushed Randy</b> from his latest trip to the CVS on Thayer looks like! <b>Use the arrows to swipe through the storyboard!</b></p>
+            <!-- CITATION: Carousel is from the Bootstrap Docs: https://getbootstrap.com/docs/4.2/components/carousel/ -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="story1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="story2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="story3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+        <div>
+    
+        <!-- Conclusion -->
+        <div class="col-md-12 mt-5">
+            <h2>Conclusion</h2>
+            <p>With personas like Perplexed Pablo and Rushed Randy, and Rushed Randy's Storyboard, designers can work to improve both the UI and UX for the CVS Self-Checkout Interface and future products!</p>
+        </div>
+</div>
+</section>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- Structure based off of Jeff's bootstrap tutorial https://www.youtube.com/watch?v=6Df6xbs5m8A -->
+<head>
+    <link href="favicon.png" rel="icon">
+
+  <!-- Favicons -->
+  <!-- CITATION: Taken from https://play.google.com/store/apps/details?id=com.alfianlosari.hackernews&hl=en&gl=US -->
+  <link href="favicon.png" rel="icon">
+
+  <!-- Font -->
+  <!-- Sofia-Pro Adobe Font -->
+  <link rel="stylesheet" href="https://use.typekit.net/blg0zww.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Index CSS File -->
+  <link href="development.css" rel="stylesheet">
+
+  <!-- From https://getbootstrap.com/docs/5.0/examples/#custom-components Jumbotron Example -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Development</title> 
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light text-white sticky-top custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="../index.html">Final Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" aria-current="page" href="#project">Project</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#concepts">New Concepts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#final">Final Page</a>
+          </li>
+      
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container py-4">
+
+<div class="p-5 mb-4 dark-bg rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold" style="color: white">Development</h1>
+      <p class="col-md-8 fs-4" style="color: white">Learning Javascript</p>
+    </div>
+  </div>
+  <div class="row">
+
+    <div>
+      <h4 id="project" class="pb-2 mb-2">The Project</h4>
+      <p> In this project, I learned how to use javascript and state. The task was to create a page that had cards on it. Given that it was
+          right before Thnaksgiving, and I love pie, I decided to make a pie website. The features include filtering and sorting and adding 
+          a recipe to a favorites list.
+     </p>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h3 id="issues" class="pb-4 mb-4 border-bottom">
+        New Concepts and Features
+      </h3>
+
+      <!-- Add site-screenshot on Left in Rounded Image and then on right a description of website, below that is a fun fact that is expandable -->
+      <div class="col" style="justify-content: center; align-items: center;">
+        <div class="accordion" id="lofi">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Filtering
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#lofi">
+              <div class="accordion-body">
+                <ul>
+                  <li>I used state to figure out which checkbox was selected</li>
+                  <li>After knowing which boxes were selected, I filtered the list using python's filter method</li>
+                  <li> Intuitive Filtering</li>
+                  <ul>
+                    <li>You can also compound filters, so if two author filters are selected, it shows results for both of those authors</li>
+                    <li> But if two filters of different categories are selected, it shows the intersection of those categories </li>
+                    <li>When no filters are selected, all results are shown</lil>
+                    <li>This was the most intuitive way to filter</li>
+                  </ul>
+        
+                 </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Sorting 
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#lofi">
+              <div class="accordion-body">
+                <ul>
+                  <li>I had two sorting features, alphabetical and by amount of time</li>
+                  <li>I learned how to create sorting functions in python, and use the sort method for lists</li>
+                  <li>I used state to see which radio button was selected, so it would sort appropriately.</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Aggregator
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#lofi">
+              <div class="accordion-body">
+                <ul>
+                  <li>There is a bookmark feature that allows user to add a specific recipe to their favorites list</li>
+                  <li>The bookmark can be checked and unchecked</li>
+                  <li>A list of favorited items along with the total time to cook all of the favorited items is displayed, the list updates automatically depending on what is checked</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+    
+<br>
+<br>
+<h3 id="pages" class="pb-4 mb-4 border-bottom">
+  The Final Product
+</h3>
+<p>
+  Click the image to see my pie website!
+</p>
+<div class="col-md-5 col">
+<div class="card dark-bg h-100 ">
+    <div class="card-body">
+    <a href="https://uncomfortableunicorn999.github.io/development/">
+    <img class="site img-fluid" src="./pies.png" alt="Orca YC Page">
+    </a>
+    <h4 class=" on-dark-bg">My Redesign</h4>
+    <p class="card-text on-dark-bg">
+    </p>
+    
+    </div>
+</div>
+</div>
+
+
+    
+
+</div>
+</div>
+ <!-- Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+ crossorigin="anonymous"></script>
+
+<!-- CITATION: Tooltip Code https://getbootstrap.com/docs/5.0/components/tooltips/ -->
+<script>
+ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+   return new bootstrap.Tooltip(tooltipTriggerEl)
+ })
+</script>
+
+<!-- Lightbox CDN for Modal Image Gallery -->
+<!-- CITATION: https://trvswgnr.github.io/bs5-lightbox/ -->
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
+
+<!-- import index.js in this directory -->
+<script src="index.js"></script>
+</body>
+
+</html>
